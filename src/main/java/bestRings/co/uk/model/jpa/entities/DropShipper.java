@@ -1,4 +1,4 @@
-package model.jpa.entities;
+package bestRings.co.uk.model.jpa.entities;
 
 import java.util.List;
 

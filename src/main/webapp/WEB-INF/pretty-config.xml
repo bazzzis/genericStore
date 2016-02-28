@@ -1,7 +1,10 @@
-<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.2.0" 
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.2.0
-                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.2.0.xsd">
+<pretty-config  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+elementFormDefault="qualified"
+
+targetNamespace="http://ocpsoft.com/prettyfaces/3.2.0"
+
+xmlns="http://ocpsoft.com/prettyfaces/3.2.0">
 
    <!-- Begin Example RewriteRules 
    
@@ -16,11 +19,11 @@
 -->
       <url-mapping id="home"> 
           <pattern value="/s" /> 
-          <view-id>/WEB-INF/second.jsf</view-id>          
+          <view-id>/WEB-INF/views/second.jsf</view-id>          
       </url-mapping> 
       <url-mapping id="valera"> 
           <pattern value="/#{anything}/w" /> 
-          <view-id>/WEB-INF/second.jsf</view-id>          
+          <view-id>/WEB-INF/views/second.jsf</view-id>          
       </url-mapping> 
       
       <!--       <url-mapping id="store"> 

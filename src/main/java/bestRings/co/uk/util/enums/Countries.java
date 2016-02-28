@@ -1,4 +1,4 @@
-package util.enums;
+package bestRings.co.uk.util.enums;
 
 public enum Countries {
 	

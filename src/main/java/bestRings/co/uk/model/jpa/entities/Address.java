@@ -1,4 +1,4 @@
-package model.jpa.entities;
+package bestRings.co.uk.model.jpa.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
-import util.enums.Countries;
+import bestRings.co.uk.util.enums.Countries;
 @Entity
 @NamedQueries(value = { @NamedQuery(name = "Address.findByContactName", query = "select adr from Address adr where adr.contactName=:contactName") })
 public class Address {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="common/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets" >  
+  
+<ui:define name="title" >rdefined title</ui:define>
+
+<ui:define name="content">
+
+second page redirected from servlet
+#{helloWorld.redirect()}
+<h:form>
+<p:commandButton   action="#{helloWorld.redirect()}" value="Valera go Home!" /> 
+<h:commandButton action="third" value="Page2" />
+</h:form>
+<h3>Remaining Chars</h3>
+    <p:inputTextarea placeholder ="#{helloWorld.showServiceMesage()}" rows="5" cols="30" counter="display" maxlength="10" counterTemplate="{0} characters remaining." autoResize="false" />
+    <h:outputText id="display" />
+
+</ui:define>
+</ui:composition>
