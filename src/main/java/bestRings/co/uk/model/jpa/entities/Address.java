@@ -13,7 +13,7 @@ import javax.persistence.NamedQuery;
 import bestRings.co.uk.util.enums.Countries;
 @Entity
 @NamedQueries(value = { @NamedQuery(name = "Address.findByContactName", query = "select adr from Address adr where adr.contactName=:contactName") })
-public class Address {
+public class Address implements AbstractEntity {
 
 
 	
@@ -33,11 +33,11 @@ private String postalCode;
 
 @Column(columnDefinition="TEXT")
 private String telephone;
-
+@Override
 public Long getId() {
 	return id;
 }
-
+@Override
 public void setId(Long id) {
 	this.id = id;
 }

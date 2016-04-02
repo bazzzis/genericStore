@@ -11,8 +11,8 @@
 
 <ui:define name="content">
 
-second page redirected from servlet
-#{helloWorld.redirect()}
+Main page
+<p:outputLabel value="#{mainPageController.showMe}"/>
 <h:form>
 <p:commandButton   action="#{helloWorld.redirect()}" value="Valera go Home!" /> 
 <h:commandButton action="third" value="Page2" />

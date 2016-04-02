@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 
 
 @Entity
-public class Product {
+public class Product implements AbstractEntity{
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private Long id;
 	@Column(nullable = false, columnDefinition="TEXT")
@@ -22,11 +22,13 @@ public class Product {
 	@Column(nullable = false, columnDefinition="TEXT")
 	private String description;
 	@ManyToOne( fetch = FetchType.LAZY)
-	@JoinColumn(name = "productsList")
+	@JoinColumn(name = "DropShipper")
 	private DropShipper dropshipper;
+	@Override
 	public Long getId() {
 		return id;
 	}
+	@Override
 	public void setId(Long id) {
 		this.id = id;
 	}

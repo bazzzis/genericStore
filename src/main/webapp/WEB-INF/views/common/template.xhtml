@@ -11,7 +11,8 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><ui:insert name="title"> Insert title here </ui:insert></title>
-	<h:outputStylesheet  name="custom.css"  />
+	<link href="#{facesContext.externalContext.requestContextPath}/resources/custom.css" rel="stylesheet" type="text/css" />
+	<h:outputScript name="main.js" />
 </h:head>
 <h:body>
 
